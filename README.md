@@ -1,3 +1,3 @@
 ![tippay logo](/github-assets/tippay%20logo.png)
-<hr>
-A solution for IRP (In Repl Purchases) on Replit.com
+<hr><br>
+A easy to use IRP payment processor.
