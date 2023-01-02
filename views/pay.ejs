@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset='utf-8'>
+    <meta property='og:title'  content='Tippay - purchase product'>
+    <meta property='og:description'  content='Buy <%=item%> for <%=price%> Cycles'>
+    
+    <title>Buy <%=item%> for <%=price%> Cycles</title>
+
+    <link rel="stylesheet" href="/css/pay.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="icon" type="image/png" href="/tippay.png" />
+
+    <script>
+      const config = {
+        repl: "<%=repl%>",
+        user: "<%=user%>",
+        item: "<%=item%>",
+        price: <%=price%>
+      }
+    </script>
+      
+    <script defer src="/js/pay.js"></script>
+  </head>
+  <body>
+    <div class="center">
+      <h1>Tippay</h1>
+      <br>
+      <div class="block">
+        <h2>Buy <%=item%> for <%=price%> Cycles</h2>
+        <br>
+        <h1 id="status">Loading...</h1>
+        <br>
+        <p>When the purchase is completed, you'll be redirected back to <%=repl%>. We aren't responsible for refunds or the Repl you're buying from.</p>
+      </div>
+    </div>
+  </body>
+</html>

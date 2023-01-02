@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset='utf-8'>
+    <meta property='og:title'  content='Tippay - purchase product'>
+    <meta property='og:description'  content='Buy <%=item%> for <%=price%> Cycles'>
+    
+    <title>Buy <%=item%> for <%=price%> Cycles</title>
+
+    <link rel="stylesheet" href="/css/pay.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="icon" type="image/png" href="/tippay.png" />
+
+    <script src="https://cdn.jsdelivr.net/gh/codingMASTER398/clean-replit-auth/auth.min.js"></script>
+  </head>
+  <body>
+    <div class="center">
+      <h1>Tippay</h1>
+      <br>
+      <div class="block">
+        <h2>Buy <%=item%> for <%=price%> Cycles</h2>
+          
+        <button id="login">Login with Replit</button>
+  
+        <p>When the purchase is completed, you'll be redirected back to <%=repl%>.</p>
+      </div>
+    </div>
+        
+    <script>
+      repl_auth({
+        id: 'login'
+      })
+    </script>
+  </body>
+</html>
